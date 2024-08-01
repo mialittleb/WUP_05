@@ -108,5 +108,5 @@ The p-value=0.0000002.333 which is smaller than 0.5 therefore we reject the null
 
 
 The new preventative aides drug triUmpsal is not effective in drug users.
-
+        
 
