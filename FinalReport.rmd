@@ -51,7 +51,7 @@ barchartGC(~treatment + infected,data=druggies, type="percent")
 
 ```
 
-
+This shows that there is little to no effect with treatment and those who have aides.
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!--> 
@@ -61,6 +61,9 @@ table1 <- xtabs(~treatment + infected, data=druggies)
 rowPerc(table1)
 colPerc(table1)
 ```
+
+Numerical results show that 3.99 percent of treatmetn was effective in drug users with aides 
+While 40.87 percent was not effective in those who had aides.
 
 
 ## Inferential Results
@@ -73,6 +76,7 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+The p-value=0.0000002.333 which is smaller than 0.5 therefore we reject the null hypothesis. 
 
 
 
@@ -81,6 +85,28 @@ fisher.test(table1)
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!--> 
 
 
+$H_0$ The new preventative aides drug triUmpsal is effective in drug users.
 
+$H_A$ The new preventative aides drug triUmpsal is not effective in drug users.
+
+methods used were 
+
+Treatment is a categorical variable
+
+Infected is a categorical variable, 
+
+So i use the CAT~CAT helper file,   
+
+The graphical results show that their is little to no effect with treatment and those who have aides.
+
+
+Numerical results show that 3.99 percent of treatmetn was effective in drug users with aides 
+While 40.87 percent was not effective in those who had aides.
+
+
+The p-value=0.0000002.333 which is smaller than 0.5 therefore we reject the null hypothesis. 
+
+
+The new preventative aides drug triUmpsal is not effective in drug users.
 
 
